@@ -58,8 +58,8 @@ graph TD
     subgraph "RAG Pipeline (Client-Side)"
         Hook -->|2. Fetch Results| Search[SerpAPI / Google]
         Search -->|3. Return Snippets| Hook
-        Hook -->|4. Construct Context| Prompt[System Prompt Engineering]
-        Prompt -->|5. Send Context + History| LLM[LLM API (GLM-4)]
+        Hook -->|4. Construct Context| Prompt["System Prompt Engineering"]
+        Prompt -->|5. Send Context + History| LLM["LLM API (GLM-4)"]
     end
     
     subgraph "State & UI"
