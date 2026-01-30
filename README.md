@@ -59,7 +59,7 @@ graph TD
         Hook -->|2. Fetch Results| Search[SerpAPI / Google]
         Search -->|3. Return Snippets| Hook
         Hook -->|4. Construct Context| Prompt["System Prompt Engineering"]
-        Prompt -->|5. Send Context + History| LLM["LLM API (GLM-4)"]
+        Prompt -->|5. Send Context + History| LLM["LLM API (GLM-4.7-Flash)"]
     end
     
     subgraph "State & UI"
